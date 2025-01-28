@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <section>
+        <article>
+                     <!-- //Example  1\\ 
+                  <div id="box"></div> -->
+                   
+                   <!-- //Example  2\\ 
+                  <h1 id="TEXT">THIS IS A CAR</h1>
+                  <button onclick="color()">COLOR CHANGE</button>
+                  <button onclick="bg()">BG-COLOR CHANGE</button> -->
+
+                   <!--//Example   3\\--> 
+                  <h1 id="TEXT">THIS IS A CAR</h1>
+                  <button onclick="colorbg()">COLOR AND BGCOLOR CHANGE</button>
+        </article>
+    </section>
+    <aside>
+
+    </aside>
+    <footer>
+
+    </footer>
+
+    <script>
+              // Example 1 \\
+    //    var a = document.getElementById("box");
+    //    a.style.height="200px";
+    //    a.style.width="200px";
+    //    a.style.background="blue";
+
+
+            // Example 2 \\
+    // var a = document.getElementById("TEXT");
+
+    // function color()
+    // {
+    //     a.style.color="orange";
+    // }
+    // function bg()
+    // {
+    //     a.style.background="orange";
+    // }
+    
+    // Example 3 \\
+    function colorbg()
+    {
+        var a = document.getElementById("TEXT")
+        a.style.color="orange";
+        a.style.background="blue";
+        a.style.height="70px";
+        a.style.width="150px";
+        a.style.textAlign="center";
+    }
+
+
+    </script>
+</body>
+</html>
