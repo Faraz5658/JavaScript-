@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center Div Example</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        .main {
+            width: 400px;
+            height: 440px;
+            background-color: #4caf50;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .main-image image {
+            width: 200px;
+            height: 10%;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+        }
+
+        .sub{
+            height: 50px;
+            width: 50px;
+            margin: 5px;
+            position: relative;
+            right: 390px;
+            top: 130px;
+            padding: 15px;
+        }
+        .sub img{
+            height: 50px;
+            width: 50px;
+            margin: 5px;
+            right: 400px;
+            top: 100px;
+        }
+
+        .sub button{
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="main-image">
+            <img src="images/2.png" alt=""  id="main-image">
+            <h2 id="text">P A K</h2>
+        </div>
+        
+    </div>
+    <div class="sub" id="sub">
+        <button onclick="pickone()"><img src="images/download.png" alt=""></button>
+
+    </div>
+    <div class="sub" id="sub">
+        <button onclick="picktwo()"><img src="images/3.png" alt=""></button>
+        
+
+    </div>
+    <div class="sub" id="sub">
+        <button onclick="pickthree()"><img src="images/images.jpeg" alt=""></button>
+    </div>
+    <div class="sub" id="sub">
+        <button onclick="pickfour()"><img src="images/5.jpeg" alt=""></button>
+    </div>  
+
+    <script>
+        
+        function pickone()
+        {
+        var a=document.getElementById("main-image");
+        document.getElementById("text").innerText = "U S A";
+        a.src = "images/download.png";
+        }
+
+        function picktwo()
+        {
+        var b = document.getElementById("main-image");
+        document.getElementById("text").innerText = "E N G";
+        b.src="images/3.png";
+        }
+
+        function pickthree()
+        {
+          var b = document.getElementById("main-image");
+          document.getElementById("text").innerText = "SOUTH"
+          b.src="images/images.jpeg";
+        }
+          
+        function pickfour()
+        {
+          var d=document.getElementById("main-image");
+          document.getElementById("text").innerText="IND";
+          d.src="images/5.jpeg"
+        }
+
+    </script>
+</body>
+</html>
