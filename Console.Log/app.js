@@ -1,0 +1,1 @@
+console.log('FIRST DAY IN JAVASCRIPT');
