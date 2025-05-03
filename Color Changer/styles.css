@@ -1,0 +1,31 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #ffffff;
+      transition: background-color 0.5s ease;
+    }
+
+    .container {
+      background: #f1f1f1;
+      padding: 30px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      border: none;
+      background-color: #333;
+      color: white;
+      border-radius: 5px;
+    }
+
+    #color-code {
+      font-weight: bold;
+    }
+  
