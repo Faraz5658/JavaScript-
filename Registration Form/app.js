@@ -1,31 +1,43 @@
 document.getElementById("myForm").addEventListener("submit", function (e) {
-    e.preventDefault();
 
-    const first = document.getElementById("first").value;
-    const last = document.getElementById("last").value;
-    const email = document.getElementById("email").value;
-    const phone = document.getElementById("phone").value;
-    const age = document.getElementById("age").value;
-    const address = document.getElementById("address").value;
-    const id = parseInt(document.getElementById("id").value);
+    e.preventDefault();
+    let form = e.target;
+
+    let firstName = form.fname.value;
+   
+    let lastName = form.lname.value;
+   
+    let userEmail = form.email.value;
+   
+    let phoneNumber = form.mynumber.value;
+   
+    let userAge = form.age.value;
+    
+    let userAddress = form.address.value;
+   
+    let userId = form.myid.value;
+    
     const output = document.getElementById("output");
 
-    if (id < 1 || id > 10) {
-      output.className = "error";
-      output.innerText = "ID must be between 1 and 10.";
-      return;
-    }
+    // output.className = "";
 
-    output.className = "";
     output.innerHTML = `
+
       <strong>Form Submitted:</strong><br>
-      Name: ${first} ${last}<br>
-      Email: ${email}<br>
-      Phone: ${phone}<br>
-      Age: ${age}<br>
-      Address: ${address}<br>
-      ID: ${id}
+
+      Name: ${firstName} ${lastName}<br>
+
+      Email: ${userEmail}<br>
+      
+      Phone: ${phoneNumber}<br>
+
+      Age: ${userAge}<br>
+      
+      Address: ${userAddress}<br>
+      
+      ID: ${userId}
     `;
 
-    this.reset();
+    form.reset();
+
   });
